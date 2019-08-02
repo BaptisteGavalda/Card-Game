@@ -1,7 +1,8 @@
 RM	= rm -f
 
 SRC	= main.cpp \
-	  Cards.cpp
+	  Cards.cpp \
+	  Player.cpp
 
 OBJ	= $(SRC:.cpp=.o)
 
