@@ -1,6 +1,7 @@
 RM	= rm -f
 
-SRC	= main.cpp
+SRC	= main.cpp \
+	  Cards.cpp
 
 OBJ	= $(SRC:.cpp=.o)
 
@@ -17,6 +18,6 @@ clean:
 	$(RM) $(OBJ)
 
 fclean: clean
-	$(RM) $(OBJ)
+	$(RM) $(NAME)
 
 re: fclean all

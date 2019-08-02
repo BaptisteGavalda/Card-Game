@@ -14,17 +14,18 @@ public:
   }
   ~Card() {}
 
-  getName() {
+  std::string getName() {
     return (this->name);
   }
 
-  getId() {
+  int getId() {
     return (this->id);
   }
 
-  getLevel() {
+  int getLevel() {
     return (this->level);
-}
+  }
+};
 
 class    Unit : public Card
 {
@@ -40,9 +41,16 @@ public:
     this->mouvement = mouvement;
   }
   ~Unit(){}
-}
+};
 
 class    Effect : public Card
 {
+private:
+  std::string    effect;
 
-}
+public:
+  Effect(std::string name, int level, std::string effect) : Card(name, level) {
+    this->effect = effect;
+  }
+  ~Effect(){}
+};
