@@ -1,4 +1,4 @@
-#incude "includes.h"
+#include "includes.h"
 
 #define MAX_LP 20
 
@@ -16,15 +16,15 @@ public:
   }
   ~Player() {}
 
-  getLifePoint() {
+  int getLifePoint() {
     return (this->life_points);
   }
 
-  getId() {
+  int getId() {
     return (this->id);
   }
   //getHand()
   //getHandSize()
   //getDeck()
   //getDeckSize()
-}
+};

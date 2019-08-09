@@ -3,5 +3,6 @@
 
 #include <iostream>
 #include "Cards.hpp"
+#include "Player.hpp"
 
 #endif /*INCLUDES_H_*/
