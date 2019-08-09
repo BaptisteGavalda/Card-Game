@@ -2,6 +2,8 @@
 # define INCLUDES_H_
 
 #include <iostream>
+#include <list>
+
 #include "Cards.hpp"
 #include "Player.hpp"
 
