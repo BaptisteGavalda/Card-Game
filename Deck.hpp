@@ -19,6 +19,11 @@ public:
   void addCard(Card card) {
     this->cardsList.push_back(card);
   }
+
+  void showCards() {
+    for (std::list<Card>::iterator it=this->cardsList.begin(); it != this->cardsList.end(); ++it)
+      std::cout << it->getName() << " " << it->getLevel() << std::endl;
+  }
 };
 
 #endif /*DECK_H_*/
