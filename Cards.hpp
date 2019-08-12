@@ -1,3 +1,8 @@
+#ifndef CARDS_H_
+# define CARDS_H_
+
+#include "includes.h"
+
 class    Card
 {
 private:
@@ -14,17 +19,11 @@ public:
   }
   ~Card() {}
 
-  std::string getName() {
-    return (this->name);
-  }
+  std::string getName();
+ 
+  int getId();
 
-  int getId() {
-    return (this->id);
-  }
-
-  int getLevel() {
-    return (this->level);
-  }
+  int getLevel();
 };
 
 class    Unit : public Card
@@ -54,3 +53,5 @@ public:
   }
   ~Effect(){}
 };
+
+#endif /* CARDS_H_ */

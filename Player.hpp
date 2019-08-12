@@ -1,3 +1,6 @@
+#ifndef PLAYER_H_
+# define PLAYER_H_
+
 #include "includes.h"
 
 #define MAX_LP 20
@@ -10,21 +13,22 @@ private:
   int    id;
 
 public:
-  Player(/*Hand, Deck,*/) {
+  Player() {
     this->life_points = MAX_LP;
     //    this->id = getNewId();
   }
   ~Player() {}
 
-  int getLifePoint() {
-    return (this->life_points);
-  }
+  int getLifePoint();
 
-  int getId() {
-    return (this->id);
-  }
+  int getId();
+
+  //addHand(Hand hand)
+  //addDeck(Deck deck)
   //getHand()
   //getHandSize()
   //getDeck()
   //getDeckSize()
 };
+
+#endif /* PLAYER_H_ */
