@@ -12,18 +12,17 @@ private:
 public:
   Deck(std::string name) {
     this->name = name;
-    //this->id = getId();
+    //this->id = initId();
   }
   ~Deck() {}
 
-  void addCard(Card card) {
-    this->cardsList.push_back(card);
-  }
+  void addCard(Card card);
 
-  void showCards() {
-    for (std::list<Card>::iterator it=this->cardsList.begin(); it != this->cardsList.end(); ++it)
-      std::cout << it->getName() << " " << it->getLevel() << std::endl;
-  }
+  void showCards();
+
+  int getCardsNumber();
+
+  int getId();
 };
 
 #endif /*DECK_H_*/
