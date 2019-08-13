@@ -4,8 +4,4 @@
 #include <iostream>
 #include <list>
 
-#include "Cards.hpp"
-#include "Player.hpp"
-#include "Deck.hpp"
-
 #endif /*INCLUDES_H_*/

@@ -2,6 +2,7 @@
 # define DECK_H_
 
 #include "includes.h"
+#include "Cards.hpp"
 
 class Deck {
 private:
