@@ -2,7 +2,7 @@
 # define PLAYER_H_
 
 #include "includes.h"
-#include "Deck.hpp"
+#include "ListCard.hpp"
 
 #define MAX_LP 20
 

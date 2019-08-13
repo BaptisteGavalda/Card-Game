@@ -1,15 +1,15 @@
-#include "Deck.hpp"
+#include "ListCard.hpp"
 
-void Deck::addCard(Card card) {
+void CardList::addCard(Card card) {
   this->cardsList.push_back(card);
 }
 
-void Deck::showCards() {
+void CardList::showCards() {
   for (std::vector<Card>::iterator it=this->cardsList.begin(); it != this->cardsList.end(); ++it)
     std::cout << it->getName() << " " << it->getLevel() << std::endl;
 }
 
-int Deck::getCardsNumber() {
+int CardList::getCardsNumber() {
   int card_nb;
 
   card_nb = 0;
@@ -18,6 +18,6 @@ int Deck::getCardsNumber() {
   return (card_nb);
 }
 
-int Deck::getId() {
+int CardList::getId() {
   return (this->id);
 }

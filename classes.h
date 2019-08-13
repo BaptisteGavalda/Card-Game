@@ -3,6 +3,6 @@
 
 #include "Cards.hpp"
 #include "Player.hpp"
-#include "Deck.hpp"
+#include "ListCard.hpp"
 
 #endif /*CLASSES_H_*/

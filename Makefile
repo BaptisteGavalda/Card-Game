@@ -1,7 +1,7 @@
 RM	= rm -f
 
 SRC	= main.cpp \
-	  Deck.cpp \
+	  ListCard.cpp \
 	  Cards.cpp \
 	  Player.cpp
 
