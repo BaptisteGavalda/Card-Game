@@ -2,15 +2,16 @@
 # define PLAYER_H_
 
 #include "includes.h"
+#include "Deck.hpp"
 
 #define MAX_LP 20
 
 class    Player {
 private:
-  //Hand
-  //Deck
   int    life_points;
   int    id;
+  std::list<Deck> deck;
+  std::list<Deck> hand;
 
 public:
   Player() {
@@ -20,8 +21,9 @@ public:
   ~Player() {}
 
   int getLifePoint();
-
   int getId();
+
+  int drawCard();
 
   //addHand(Hand hand)
   //addDeck(Deck deck)

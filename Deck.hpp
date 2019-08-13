@@ -18,11 +18,9 @@ public:
   ~Deck() {}
 
   void addCard(Card card);
-
   void showCards();
 
   int getCardsNumber();
-
   int getId();
 };
 
