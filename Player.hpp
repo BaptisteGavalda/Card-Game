@@ -10,8 +10,8 @@ class    Player {
 private:
   int    life_points;
   int    id;
-  std::list<Deck> deck;
-  std::list<Deck> hand;
+  std::vector<Deck> deck;
+  std::vector<Deck> hand;
 
 public:
   Player() {

@@ -8,7 +8,7 @@ class Deck {
 private:
   int id;
   std::string name;
-  std::list<Card> cardsList;
+  std::vector<Card> cardsList;
 
 public:
   Deck(std::string name) {

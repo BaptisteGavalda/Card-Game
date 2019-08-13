@@ -5,7 +5,7 @@ void Deck::addCard(Card card) {
 }
 
 void Deck::showCards() {
-  for (std::list<Card>::iterator it=this->cardsList.begin(); it != this->cardsList.end(); ++it)
+  for (std::vector<Card>::iterator it=this->cardsList.begin(); it != this->cardsList.end(); ++it)
     std::cout << it->getName() << " " << it->getLevel() << std::endl;
 }
 
@@ -13,7 +13,7 @@ int Deck::getCardsNumber() {
   int card_nb;
 
   card_nb = 0;
-  for (std::list<Card>::iterator it=this->cardsList.begin(); it != this->cardsList.end(); ++it)
+  for (std::vector<Card>::iterator it=this->cardsList.begin(); it != this->cardsList.end(); ++it)
     card_nb++;
   return (card_nb);
 }

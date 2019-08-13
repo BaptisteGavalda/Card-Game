@@ -9,10 +9,10 @@ int Player::getId() {
 }
 
 int Player::drawCard() {
-  if (this->deck.begin())
+  if (this->deck.size() != 0)
     {
-      this->hand.push_back(this->deck.begin());
-      this->deck.pop_front();
+      this->hand.push_back(this->deck.back());
+      this->deck.pop_back();
       return (0);
     }
   return (1);
