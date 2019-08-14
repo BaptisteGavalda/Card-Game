@@ -3,7 +3,8 @@ RM	= rm -f
 SRC	= main.cpp \
 	  ListCard.cpp \
 	  Cards.cpp \
-	  Player.cpp
+	  Player.cpp \
+	  Field.cpp
 
 OBJ	= $(SRC:.cpp=.o)
 
